@@ -17,7 +17,6 @@ namespace ToDoCore.Entities
         public Priority Priority { get; set; }
         public Status Status { get; set; }
         public DateTime Deadline { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CreatedAt { get; set; }
 
         [ForeignKey("UserId")]
